@@ -1,1 +1,8 @@
-<p>blog-list works!</p>
+<ul class="u-listReset">
+  <li *ngFor="let blog of blogs">
+    <img [src]="blog.fields.featuredImage.fields.file.url" alt="" />
+    {{ blog.fields.title }}
+    <br />
+    {{ blog.fields.description }}
+  </li>
+</ul>

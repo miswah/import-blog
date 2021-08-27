@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { CdaService } from '../cda.service';
 
 @Component({
   selector: 'app-homepage',
@@ -7,15 +6,7 @@ import { CdaService } from '../cda.service';
   styleUrls: ['./homepage.component.css'],
 })
 export class HomepageComponent implements OnInit {
-  public blogs: any = [];
+  constructor() {}
 
-  constructor(private contentful: CdaService) {}
-
-  ngOnInit(): void {
-    this.contentful.getProducts().then((products) => (this.blogs = products));
-  }
-
-  onClick() {
-    console.log(this.blogs);
-  }
+  ngOnInit(): void {}
 }

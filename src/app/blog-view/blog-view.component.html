@@ -1,1 +1,11 @@
-<p>blog-view works!</p>
+<div *ngIf="loaded">
+  <h1>{{ current.fields.title }}</h1>
+  <img [src]="current.fields.featuredImage.fields.file.url" alt="" />
+  <p>{{ current.fields.description }}</p>
+  <div *ngFor="let head of heading">
+    <h2>{{ head }}</h2>
+  </div>
+  <div *ngFor="let paragraph of paragraphs">
+    {{ paragraph }}
+  </div>
+</div>
