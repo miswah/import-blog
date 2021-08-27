@@ -15,18 +15,24 @@ export class BlogViewComponent implements OnInit {
   public paragraphs: any = [];
   public heading: any = [];
   public loaded: boolean = false;
-  public stringy: string = '';
+  public media: any = [];
+  public images: any = [];
 
   constructor(private contentful: CdaService) {}
 
   ngOnInit(): void {
     this.contentful.getProducts().then((products) => {
       this.blogs = products;
+      //........................................................
+      this.media = this.blogs[0].fields.postMedia;
+      this.media.forEach((element) => {
+        this.images.push(element.fields.file.url);
+      });
+
+      //.................................................
       this.current = this.blogs[this.id];
       this.current.fields.body.content.forEach((element: any) => {
         this.contentBody.push(element);
-        this.stringy =
-          'safffffffffffffffffffffffffoooooooooooooommmmmmmmmmmmmmmmmnnnnnnnnnnissssssssssssssss';
       });
       //break.................................................................
       this.contentBody.forEach((element: any) => {
@@ -36,17 +42,11 @@ export class BlogViewComponent implements OnInit {
           this.paragraphs.push(element.content[0].value);
         }
       });
-      console.log(this.heading);
-      console.log(this.paragraphs);
+      this.loaded = true;
     });
   }
 
-  ngAfterViewChecked() {
-    this.loaded = true;
-  }
-
   onClick() {
-    // console.log(this.heading);
-    // console.log(this.paragraphs);
+    console.log(this.images);
   }
 }

@@ -1,10 +1,12 @@
 <div *ngIf="loaded">
+  <button (click)="onClick()">Click!!!</button>
   <h1>{{ current.fields.title }}</h1>
   <img [src]="current.fields.featuredImage.fields.file.url" alt="" />
   <p>{{ current.fields.description }}</p>
   <div *ngFor="let head of heading">
     <h2>{{ head }}</h2>
   </div>
+  <img [src]="images" alt="" />
   <div *ngFor="let paragraph of paragraphs">
     {{ paragraph }}
   </div>
