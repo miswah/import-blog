@@ -1,0 +1,11 @@
+<!-- ./app/product-list/product-list.component.html-->
+<ul class="u-listReset">
+  <li *ngFor="let blog of blogs">
+    <img [src]="blog.fields.featuredImage.fields.file.url" alt="" />
+    {{ blog.fields.title }}
+    <br />
+    {{ blog.fields.description }}
+  </li>
+</ul>
+
+<button (click)="onClick()">heloo</button>

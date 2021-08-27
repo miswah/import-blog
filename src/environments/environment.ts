@@ -3,7 +3,18 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+
+  //Contenful config
+
+  contenful_config: {
+    space: 'n2er5raejnob',
+    accessToken: 'SXFVts5oJcIkn8xojXpeCT31YhlZyPTeR2-MTnz7jxs',
+
+    contentTypeIds: {
+      TestPost: 'TestPost',
+    },
+  },
 };
 
 /*
