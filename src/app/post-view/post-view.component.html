@@ -1,0 +1,13 @@
+<div *ngIf="loaded">
+  <div>
+    <img [src]="featuredImage" alt="" style="width: 100vw" />
+  </div>
+  <div *ngFor="let content of body">
+    <div *ngIf="content.nodeType === 'heading-2'" style="color: red">
+      {{ content.content[0].value }}
+    </div>
+    <div *ngIf="content.nodeType === 'paragraph'" style="color: blue">
+      {{ content.content[0].value }}
+    </div>
+  </div>
+</div>
