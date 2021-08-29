@@ -8,9 +8,10 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { BlogViewComponent } from './blog-view/blog-view.component';
 import { BlogListComponent } from './blog-list/blog-list.component';
 import { FeaturedBlogComponent } from './featured-blog/featured-blog.component';
+import { PostViewComponent } from './post-view/post-view.component';
 
 @NgModule({
-  declarations: [AppComponent, HomepageComponent, BlogViewComponent, BlogListComponent, FeaturedBlogComponent],
+  declarations: [AppComponent, HomepageComponent, BlogViewComponent, BlogListComponent, FeaturedBlogComponent, PostViewComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [CdaService],
   bootstrap: [AppComponent],
