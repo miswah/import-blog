@@ -47,6 +47,6 @@ export class BlogViewComponent implements OnInit {
   }
 
   onClick() {
-    console.log(this.images);
+    console.log(this.current);
   }
 }
