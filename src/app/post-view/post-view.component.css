@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:ital,wght@1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap");
+
 .container {
   display: grid;
   grid-template-columns: auto, 1fr;
@@ -5,18 +10,57 @@
 
 .body {
   grid-column: 1/2;
-  align-self: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 3vh;
+}
+
+@media screen and (max-width: 500px) {
+  .body {
+    font-size: 2vh;
+  }
 }
 
 .title {
   grid-column: 1/2;
   justify-self: center;
+  margin: 3vw;
 }
 
 h1 {
   text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 5vw;
+  margin-bottom: 5vh;
 }
 
-p {
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 10vw;
+  }
+}
+
+h2 {
+  font-size: 4vh;
+  font-family: "Playfair Display", serif;
   text-align: center;
+  border-bottom: 5px black solid;
+}
+
+h3 {
+  font-size: 4vh;
+  font-family: "Playfair Display", serif;
+}
+
+.description {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  color: black;
+  margin-top: 3vh;
+  font-size: 2vh;
+}
+
+.margin {
+  margin: 2vh;
 }
