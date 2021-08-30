@@ -24,7 +24,6 @@ export class PostViewComponent implements OnInit {
     this.contentful.getProducts().then((products) => {
       this.blogs = products;
       this.setProperties();
-
       this.loaded = true;
     });
   }
@@ -37,8 +36,6 @@ export class PostViewComponent implements OnInit {
     this.body = this.content.body.content;
     this.media = this.content.postMedia;
     this.featuredImage = this.content.featuredImage.fields.file.url;
-    console.log(this.content);
-    console.log(this.featuredImage);
   }
 
   //get one post

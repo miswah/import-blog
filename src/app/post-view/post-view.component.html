@@ -1,13 +1,21 @@
-<div *ngIf="loaded">
-  <div>
-    <img [src]="featuredImage" alt="" style="width: 100vw" />
+<div *ngIf="loaded" class="container">
+  <div class="title">
+    <h1>{{ title }}</h1>
+    <img [src]="featuredImage" class="img-fluid" alt="" />
+    <p style="color: purple">{{ descriptions }}</p>
   </div>
-  <div *ngFor="let content of body">
+  <div *ngFor="let content of body" class="body">
     <div *ngIf="content.nodeType === 'heading-2'" style="color: red">
       {{ content.content[0].value }}
     </div>
     <div *ngIf="content.nodeType === 'paragraph'" style="color: blue">
       {{ content.content[0].value }}
     </div>
+    <div *ngIf="content.nodeType === 'heading-3'" style="color: pink">
+      {{ content.content[0].value }}
+    </div>
+  </div>
+  <div>
+    <p class="body bg-red">{{ summary }}</p>
   </div>
 </div>
