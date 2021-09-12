@@ -22,6 +22,7 @@ export class FeaturedBlogComponent implements OnInit {
       this.blogs = products;
       this.getBlog();
       this.setData();
+      this.loaded = true;
     });
   }
 
