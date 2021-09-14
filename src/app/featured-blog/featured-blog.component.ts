@@ -42,5 +42,6 @@ export class FeaturedBlogComponent implements OnInit {
     for (let i = this.blogs.length - 1; i > this.blogs.length - 5; i--) {
       this.featuredBlog.push(this.blogs[i]);
     }
+    console.log(this.featuredBlog[0].fields);
   }
 }
