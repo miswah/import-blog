@@ -9,14 +9,12 @@ import { CdaService } from '../cda.service';
 })
 export class BlogListComponent implements OnInit {
   public blogs: any = [];
+  public loaded: boolean = false;
 
   constructor(private contentful: CdaService) {}
 
   ngOnInit(): void {
     this.contentful.getProducts().then((products) => (this.blogs = products));
-  }
-
-  onClick() {
-    console.log(this.blogs);
+    this.loaded = true;
   }
 }

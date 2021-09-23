@@ -11,12 +11,11 @@
       <h2>{{ fetchBlog.fields.title }}</h2>
       <p>{{ fetchBlog.fields.description }}</p>
       <a href="">Read More</a>
+      <div class="button">
+        <button (click)="fetch(0)">1</button>
+        <button (click)="fetch(1)">2</button>
+        <button (click)="fetch(2)">3</button>
+      </div>
     </div>
   </div>
-</div>
-
-<div *ngIf="loaded">
-  <button (click)="fetch(0)">1</button>
-  <button (click)="fetch(1)">2</button>
-  <button (click)="fetch(2)">3</button>
 </div>

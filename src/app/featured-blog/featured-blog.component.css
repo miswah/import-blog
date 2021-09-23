@@ -42,3 +42,9 @@
 .text > p {
   font-family: "Inter", sans-serif;
 }
+
+button {
+  background-color: transparent;
+  border: 0ch;
+  font-size: large;
+}
