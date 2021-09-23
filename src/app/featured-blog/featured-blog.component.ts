@@ -14,6 +14,7 @@ export class FeaturedBlogComponent implements OnInit {
   public descriptions: string = '';
   public featuredImage: string = '';
   public id: number = 0;
+  public fetchBlog: any = [];
 
   constructor(public contentful: CdaService) {}
 
@@ -32,9 +33,7 @@ export class FeaturedBlogComponent implements OnInit {
     this.descriptions = this.featuredBlog[this.id].fields.description;
     this.featuredImage =
       this.featuredBlog[this.id].fields.featuredImage.fields.file.url;
-
-    console.log(this.featuredBlog[this.id].fields);
-    console.log(this.featuredImage);
+    this.fetchBlog = this.featuredBlog[0];
   }
 
   //getting featured blog..........
@@ -42,6 +41,12 @@ export class FeaturedBlogComponent implements OnInit {
     for (let i = this.blogs.length - 1; i > this.blogs.length - 5; i--) {
       this.featuredBlog.push(this.blogs[i]);
     }
-    console.log(this.featuredBlog[0].fields);
+  }
+
+  //fetching the featured blog via click on button
+  fetch(id: number) {
+    this.fetchBlog = this.featuredBlog[id];
+
+    console.log(this.fetchBlog);
   }
 }
