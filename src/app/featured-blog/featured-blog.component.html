@@ -1,16 +1,22 @@
 <div *ngIf="loaded">
-  <div *ngFor="let item of featuredBlog" class="box">
+  <div class="box">
     <div>
       <img
-        [src]="item.fields.featuredImage.fields.file.url"
+        [src]="fetchBlog.fields.featuredImage.fields.file.url"
         class="image"
         alt=""
       />
     </div>
     <div class="text">
-      <h2>{{ item.fields.title }}</h2>
-      <p>{{ item.fields.description }}</p>
+      <h2>{{ fetchBlog.fields.title }}</h2>
+      <p>{{ fetchBlog.fields.description }}</p>
       <a href="">Read More</a>
     </div>
   </div>
+</div>
+
+<div *ngIf="loaded">
+  <button (click)="fetch(0)">1</button>
+  <button (click)="fetch(1)">2</button>
+  <button (click)="fetch(2)">3</button>
 </div>
