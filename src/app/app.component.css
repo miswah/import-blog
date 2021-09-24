@@ -1,0 +1,16 @@
+#navbar {
+  background-color: transparent;
+  position: fixed;
+  margin-left: 50vw;
+}
+
+#navbar > div > a {
+  margin: 2rem;
+  color: black;
+}
+
+#navbar > div > a:hover {
+  font-size: larger;
+  color: purple;
+  text-decoration: none;
+}
