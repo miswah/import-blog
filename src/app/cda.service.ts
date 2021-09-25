@@ -20,7 +20,7 @@ export class CdaService {
   });
 
   constructor() {}
-
+  //list of post
   getProducts(query?: object): Promise<Entry<any>[]> {
     return this.cdaClient
       .getEntries(

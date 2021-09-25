@@ -1,3 +1,4 @@
+
 <div *ngIf="loaded">
   <div class="box">
     <div>
@@ -10,12 +11,15 @@
     <div class="text">
       <h2>{{ fetchBlog.fields.title }}</h2>
       <p>{{ fetchBlog.fields.description }}</p>
-      <a href="">Read More</a>
+
+      <a href="" id="readme">Read More</a>
       <div class="button">
-        <button (click)="fetch(0)">1</button>
-        <button (click)="fetch(1)">2</button>
-        <button (click)="fetch(2)">3</button>
+        <button (click)="fetch(0)" id="button">1</button>
+        <button (click)="fetch(1)" id="button">2</button>
+        <button (click)="fetch(2)" id="button">3</button>
+
       </div>
     </div>
   </div>
 </div>
+

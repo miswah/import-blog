@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Castoro&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap");
@@ -48,3 +49,13 @@ button {
   border: 0ch;
   font-size: large;
 }
+
+
+button:hover {
+  color: purple;
+}
+
+#readme:hover {
+  color: purple;
+}
+

@@ -1,11 +1,11 @@
+
 <div *ngIf="loaded" class="container box">
   <div *ngFor="let blog of blogs">
     <div class="card">
       <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
         <img
           [src]="blog.fields.featuredImage.fields.file.url"
-          class="img-fluid"
-        />
+          class="img-fluid"/>
         <a href="#!">
           <div
             class="mask"
@@ -18,8 +18,9 @@
         <p class="card-text">
           {{ blog.fields.description }}
         </p>
-        <a href="#!" class="btn btn-primary">Read More</a>
+        <a href="#!" class="btn btn-primary" style="background-color: purple">Read More</a>
       </div>
     </div>
   </div>
 </div>
+
