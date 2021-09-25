@@ -1,0 +1,14 @@
+.box {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+  margin-top: 5rem;
+}
+
+.card {
+  margin: 2rem;
+}
+
+.card-body > a {
+  display: grid;
+  place-self: center;
+}

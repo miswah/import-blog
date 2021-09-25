@@ -1,0 +1,23 @@
+<div *ngIf="loaded" class="container">
+  <div class="title">
+    <h1 class="mb">{{ title }}</h1>
+
+    <img [src]="featuredImage" class="img-fluid" alt="" />
+
+    <p class="description">{{ descriptions }}</p>
+  </div>
+  <div *ngFor="let content of body" class="body">
+    <div *ngIf="content.nodeType === 'heading-2'" class="margin">
+      <h2>{{ content.content[0].value }}</h2>
+    </div>
+    <div *ngIf="content.nodeType === 'paragraph'" class="margin">
+      {{ content.content[0].value }}
+    </div>
+    <div *ngIf="content.nodeType === 'heading-3'" class="margin">
+      <h3>{{ content.content[0].value }}</h3>
+    </div>
+  </div>
+  <div>
+    <p class="body">"{{ summary }}"</p>
+  </div>
+</div>

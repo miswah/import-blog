@@ -8,13 +8,12 @@ import { HomepageComponent } from './homepage/homepage.component';
 
 import { BlogListComponent } from './blog-list/blog-list.component';
 import { FeaturedBlogComponent } from './featured-blog/featured-blog.component';
+import { PostViewComponent } from './post-view/post-view.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 import { BlogPageComponent } from './blog-page/blog-page.component';
 
 @NgModule({
-<<<<<<< Updated upstream
-  declarations: [AppComponent, HomepageComponent, BlogViewComponent, BlogListComponent, FeaturedBlogComponent, BlogPageComponent],
-  imports: [BrowserModule, AppRoutingModule],
-=======
   declarations: [
     AppComponent,
     HomepageComponent,
@@ -23,7 +22,6 @@ import { BlogPageComponent } from './blog-page/blog-page.component';
     PostViewComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
->>>>>>> Stashed changes
   providers: [CdaService],
   bootstrap: [AppComponent],
 })
