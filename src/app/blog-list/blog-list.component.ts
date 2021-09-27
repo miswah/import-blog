@@ -14,7 +14,10 @@ export class BlogListComponent implements OnInit {
   constructor(private contentful: CdaService) {}
 
   ngOnInit(): void {
-    this.contentful.getProducts().then((products) => (this.blogs = products));
+    this.contentful.getProducts().then((products) => {
+      this.blogs = products;
+      console.log(this.blogs[0].sys.id);
+    });
     this.loaded = true;
   }
 }

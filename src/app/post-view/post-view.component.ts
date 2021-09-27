@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { CdaService } from '../cda.service';
 
 @Component({
@@ -17,13 +18,18 @@ export class PostViewComponent implements OnInit {
   public body: any = [];
   public featuredImage: any = [];
   public media: any = [];
+  public blogid: string = '';
 
-  constructor(public contentful: CdaService) {}
+  constructor(public contentful: CdaService, public route: ActivatedRoute) {}
 
   ngOnInit(): void {
     this.contentful.getProducts().then((products) => {
       this.blogs = products;
+      this.route.paramMap.subscribe(
+        (params) => (this.blogid = params.get('id'))
+      );
       this.setProperties();
+      console.log(this.blogid);
       this.loaded = true;
     });
   }
