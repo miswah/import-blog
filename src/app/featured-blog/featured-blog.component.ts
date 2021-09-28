@@ -22,6 +22,7 @@ export class FeaturedBlogComponent implements OnInit {
     this.contentful.getProducts().then((products) => {
       this.blogs = products;
       this.getBlog();
+      this.fetchBlog = this.featuredBlog[0];
       this.setData();
       this.loaded = true;
     });
@@ -33,7 +34,6 @@ export class FeaturedBlogComponent implements OnInit {
     this.descriptions = this.featuredBlog[this.id].fields.description;
     this.featuredImage =
       this.featuredBlog[this.id].fields.featuredImage.fields.file.url;
-    this.fetchBlog = this.featuredBlog[0];
   }
 
   //getting featured blog..........
@@ -46,7 +46,5 @@ export class FeaturedBlogComponent implements OnInit {
   //fetching the featured blog via click on button
   fetch(id: number) {
     this.fetchBlog = this.featuredBlog[id];
-
-    console.log(this.fetchBlog);
   }
 }

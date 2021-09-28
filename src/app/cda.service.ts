@@ -5,6 +5,7 @@ import { createClient, Entry } from 'contentful';
   providedIn: 'root',
 })
 export class CdaService {
+  public post: any = [];
   private CONFIG = {
     space: 'n2er5raejnob',
     accessToken: 'SXFVts5oJcIkn8xojXpeCT31YhlZyPTeR2-MTnz7jxs',
@@ -32,5 +33,14 @@ export class CdaService {
         )
       )
       .then((res) => res.items);
+  }
+
+  getpost(id: string) {
+    this.cdaClient
+      .getEntry(id)
+      .then((entry) => {
+        this.post = entry;
+      })
+      .catch((err) => console.log(err));
   }
 }
