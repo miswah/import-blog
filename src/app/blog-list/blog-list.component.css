@@ -12,3 +12,7 @@
   display: grid;
   place-self: center;
 }
+
+.date {
+  font-weight: 100;
+}

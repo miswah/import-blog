@@ -6,6 +6,8 @@ import { createClient, Entry } from 'contentful';
 })
 export class CdaService {
   public post: any = [];
+  public tags: any = [];
+
   private CONFIG = {
     space: 'n2er5raejnob',
     accessToken: 'SXFVts5oJcIkn8xojXpeCT31YhlZyPTeR2-MTnz7jxs',
@@ -42,5 +44,10 @@ export class CdaService {
         this.post = entry;
       })
       .catch((err) => console.log(err));
+  }
+
+  getTags() {
+    // GET/spaces/{space_id}/environments/{environment_id}/tags
+    return this.cdaClient.getTags();
   }
 }
