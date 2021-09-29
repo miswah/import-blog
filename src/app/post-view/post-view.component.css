@@ -66,3 +66,7 @@ h3 {
 .margin {
   margin: 2vh;
 }
+
+.date {
+  font-weight: 100;
+}

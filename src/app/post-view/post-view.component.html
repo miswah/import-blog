@@ -1,6 +1,7 @@
 <div *ngIf="loaded" class="container">
   <div class="title">
     <h1 class="mb">{{ post.fields.title }}</h1>
+    <p class="date">Published on {{ post.sys.createdAt | date }}</p>
 
     <img
       [src]="post.fields.featuredImage.fields.file.url"

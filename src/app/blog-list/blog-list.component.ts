@@ -16,7 +16,8 @@ export class BlogListComponent implements OnInit {
   ngOnInit(): void {
     this.contentful.getProducts().then((products) => {
       this.blogs = products;
-      console.log(this.blogs[0].sys.id);
+      console.log(this.blogs[0]);
+      console.log(this.contentful.tags);
     });
     this.loaded = true;
   }
