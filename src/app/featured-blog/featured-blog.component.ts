@@ -15,6 +15,7 @@ export class FeaturedBlogComponent implements OnInit {
   public featuredImage: string = '';
   public id: number = 0;
   public fetchBlog: any = [];
+  public tags: any = [];
 
   constructor(public contentful: CdaService) {}
 
@@ -24,6 +25,9 @@ export class FeaturedBlogComponent implements OnInit {
       this.getBlog();
       this.fetchBlog = this.featuredBlog[0];
       this.setData();
+      this.contentful.getTags().subscribe((res) => {
+        this.tags = res.items;
+      });
       this.loaded = true;
     });
   }

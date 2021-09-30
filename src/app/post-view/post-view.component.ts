@@ -12,6 +12,7 @@ export class PostViewComponent implements OnInit {
   public blogid: string = '';
   public post: any = [];
   public body: any = [];
+  public tags: any = [];
   public loaded: boolean = false;
 
   constructor(public contentful: CdaService, public route: ActivatedRoute) {}
@@ -22,10 +23,11 @@ export class PostViewComponent implements OnInit {
       this.contentful.getpost(this.blogid).subscribe((res) => {
         this.post = res;
         this.body = this.post.fields.body.content;
-        console.log(this.post);
+        this.loaded = true;
+        this.contentful.getTags().subscribe((res) => {
+          this.tags = res.items;
+        });
       });
-
-      this.loaded = true;
     });
   }
 }

@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Castoro&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap");
@@ -50,7 +49,6 @@ button {
   font-size: large;
 }
 
-
 button:hover {
   color: purple;
 }
@@ -59,3 +57,7 @@ button:hover {
   color: purple;
 }
 
+.tags {
+  font-weight: 100;
+  font-size: medium;
+}

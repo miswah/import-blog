@@ -19,7 +19,6 @@ export class BlogListComponent implements OnInit {
       // console.log(this.blogs[0]);
       this.contentful.getTags().subscribe((res) => {
         this.tags = res.items;
-        console.log(this.tags);
       });
     });
     this.loaded = true;
