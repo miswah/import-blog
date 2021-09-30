@@ -1,13 +1,11 @@
 import { Injectable } from '@angular/core';
 import { createClient, Entry } from 'contentful';
+import { from } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class CdaService {
-  public post: any = [];
-  public tags: any = [];
-
   private CONFIG = {
     space: 'n2er5raejnob',
     accessToken: 'SXFVts5oJcIkn8xojXpeCT31YhlZyPTeR2-MTnz7jxs',
@@ -17,7 +15,7 @@ export class CdaService {
     },
   };
 
-  private cdaClient = createClient({
+  public cdaClient = createClient({
     space: this.CONFIG.space,
     accessToken: this.CONFIG.accessToken,
   });
@@ -38,16 +36,16 @@ export class CdaService {
   }
 
   getpost(id: string) {
-    this.cdaClient
-      .getEntry(id)
-      .then((entry) => {
-        this.post = entry;
-      })
-      .catch((err) => console.log(err));
+    // this.cdaClient
+    //   .getEntry(id)
+    //   .then((entry) => {
+    //     this.post = entry;
+    //   })
+    //   .catch((err) => console.log(err));
+    return from(this.cdaClient.getEntry(id));
   }
 
   getTags() {
-    // GET/spaces/{space_id}/environments/{environment_id}/tags
-    return this.cdaClient.getTags();
+    return from(this.cdaClient.getTags());
   }
 }

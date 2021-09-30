@@ -15,6 +15,9 @@
       </div>
       <div class="card-body">
         <p class="date">{{ blog.sys.createdAt | date }}</p>
+        <div *ngFor="let tag of tags">
+          <p class="tags">{{ tag.name }}</p>
+        </div>
         <h5 class="card-title">{{ blog.fields.title }}</h5>
         <p class="card-text">
           {{ blog.fields.description }}
