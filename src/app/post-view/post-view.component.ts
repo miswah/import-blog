@@ -19,10 +19,12 @@ export class PostViewComponent implements OnInit {
   ngOnInit(): void {
     this.route.paramMap.subscribe((params) => {
       this.blogid = params.get('id');
-      this.contentful.getpost(this.blogid);
-      this.post = this.contentful.post;
-      console.log(this.post);
-      this.body = this.post.fields.body.content;
+      this.contentful.getpost(this.blogid).subscribe((res) => {
+        this.post = res;
+        this.body = this.post.fields.body.content;
+        console.log(this.post);
+      });
+
       this.loaded = true;
     });
   }

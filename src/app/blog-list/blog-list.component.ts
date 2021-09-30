@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 import { CdaService } from '../cda.service';
 
 @Component({
@@ -9,6 +8,7 @@ import { CdaService } from '../cda.service';
 })
 export class BlogListComponent implements OnInit {
   public blogs: any = [];
+  public tags: any = [];
   public loaded: boolean = false;
 
   constructor(private contentful: CdaService) {}
@@ -16,8 +16,11 @@ export class BlogListComponent implements OnInit {
   ngOnInit(): void {
     this.contentful.getProducts().then((products) => {
       this.blogs = products;
-      console.log(this.blogs[0]);
-      console.log(this.contentful.tags);
+      // console.log(this.blogs[0]);
+      this.contentful.getTags().subscribe((res) => {
+        this.tags = res.items;
+        console.log(this.tags);
+      });
     });
     this.loaded = true;
   }
