@@ -15,7 +15,7 @@ export class CdaService {
     },
   };
 
-  public cdaClient = createClient({
+  private cdaClient = createClient({
     space: this.CONFIG.space,
     accessToken: this.CONFIG.accessToken,
   });

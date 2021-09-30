@@ -9,6 +9,9 @@
     </div>
     <div class="text">
       <h2>{{ fetchBlog.fields.title }}</h2>
+      <span *ngFor="let tag of tags; let last = last; let index = index">
+        <span class="tags">{{ tag.name }}<span *ngIf="!last">, </span></span>
+      </span>
       <p>{{ fetchBlog.fields.description }}</p>
 
       <a [routerLink]="['/post-view', fetchBlog.sys.id]" id="readme"

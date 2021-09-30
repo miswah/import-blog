@@ -15,9 +15,9 @@
       </div>
       <div class="card-body">
         <p class="date">{{ blog.sys.createdAt | date }}</p>
-        <div *ngFor="let tag of tags">
-          <p class="tags">{{ tag.name }}</p>
-        </div>
+        <span *ngFor="let tag of tags; let last = last; let index = index">
+          <span class="tags">{{ tag.name }}<span *ngIf="!last">, </span></span>
+        </span>
         <h5 class="card-title">{{ blog.fields.title }}</h5>
         <p class="card-text">
           {{ blog.fields.description }}

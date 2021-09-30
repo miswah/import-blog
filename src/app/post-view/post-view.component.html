@@ -2,6 +2,9 @@
   <div class="title">
     <h1 class="mb">{{ post.fields.title }}</h1>
     <p class="date">Published on {{ post.sys.createdAt | date }}</p>
+    <span *ngFor="let tag of tags; let last = last; let index = index">
+      <span class="tags">{{ tag.name }}<span *ngIf="!last">, </span></span>
+    </span>
 
     <img
       [src]="post.fields.featuredImage.fields.file.url"
