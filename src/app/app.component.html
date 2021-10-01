@@ -1,11 +1,16 @@
-<div id="navbar">
-  <div>
-    <a routerLink="/home">Home</a>
-    <a href="https://github.com/obeymyshinnyrod">GitHub</a>
-    <a href="">LinkedIn</a>
+<div *ngIf="loaded">
+  <div id="navbar">
+    <div>
+      <a routerLink="/home">Home</a>
+      <a href="https://github.com/obeymyshinnyrod">GitHub</a>
+      <a href="">LinkedIn</a>
+    </div>
+  </div>
+
+  <router-outlet></router-outlet>
+
+  <div id="footer">
+    <a href="https://github.com/obeymyshinnyrod/import-blog">Github Repo</a>
+    <p>Created By Miswah</p>
   </div>
 </div>
-
-<router-outlet></router-outlet>
-
-<div></div>

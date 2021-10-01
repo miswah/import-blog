@@ -18,4 +18,16 @@
 
 body {
   width: 100vw;
+  height: 100%;
+}
+
+#footer {
+  background: black;
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+
+#footer > a:hover {
+  text-decoration: none;
 }
