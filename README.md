@@ -1,4 +1,5 @@
 <!-- Add banner here -->
+![image](https://user-images.githubusercontent.com/59683844/135766042-fcf34393-2daf-4340-8d45-1f24284482bc.jpg)
 
 # Import Blog
 
@@ -20,8 +21,6 @@ A Jam stack Blog via angular and contentful, where i use <a href="https://www.co
 - [Angular](https://angular.io/)
 - [Bootstrap](https://getbootstrap.com)
 - [contentful](https://www.contentful.com/)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- The project title should be self explanotory and try not to make it a mouthful. (Although exceptions exist- **awesome-readme-writing-guide-for-open-source-projects** - would have been a cool name)
 
