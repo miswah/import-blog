@@ -1,12 +1,26 @@
 <!-- Add banner here -->
 
-# Project Title
+# Import Blog
 
 <!-- Add buttons here -->
-
-<a class="github-button" href="https://github.com/obeymyshinnyrod" aria-label="Follow @ntkme on GitHub">Follow @obeymyshinnyrod</a>
-
+<span>
+<img src="https://img.shields.io/github/followers/obeymyshinnyrod?style=social">
+<img src="https://img.shields.io/github/languages/code-size/obeymyshinnyrod/import-blog?style=social">
+<img src="https://img.shields.io/tokei/lines/github/obeymyshinnyrod/import-blog?style=social">
+<img src="https://img.shields.io/github/issues/obeymyshinnyrod/import-blog?style=social">
+<img src="https://img.shields.io/github/commit-activity/w/obeymyshinnyrod/import-blog?style=social">
+<img src="https://img.shields.io/github/last-commit/obeymyshinnyrod/import-blog">
+</span>
 <!-- Describe your project in brief -->
+A Jam stack Blog via angular and contentful, where i use <a href="https://www.contentful.com/">contentful </a>as a CMS for angular frontend. This blog uses contentful's content delivery API to fetch blogs for the frontend.
+
+### Built With
+
+- [Angular](https://angular.io/)
+- [Bootstrap](https://getbootstrap.com)
+- [contentful](https://www.contentful.com/)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- The project title should be self explanotory and try not to make it a mouthful. (Although exceptions exist- **awesome-readme-writing-guide-for-open-source-projects** - would have been a cool name)
 
@@ -41,7 +55,9 @@ I use [**Shields IO**](https://shields.io/) for making badges. It is a simple an
 
 ![Tweet](https://img.shields.io/twitter/url?style=flat-square&logo=twitter&url=https%3A%2F%2Fnavendu.me%2Fnsfw-filter%2Findex.html): This is not essential but it is a cool way to let others know about your project! Clicking this button automatically opens twitter and writes a tweet about your project and link to it. All the user has to do is to click tweet. Isn't that neat? -->
 
-# Demo-Preview
+# Preview
+
+![Random GIF](https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif)
 
 <!-- Add a demo for your project -->
 
@@ -57,14 +73,12 @@ Here is a random GIF as a placeholder.
 
 Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README. -->
 
-- [Project Title](#project-title)
-- [Demo-Preview](#demo-preview)
+- [Import Blog](#import-Blog)
+- [Preview](#preview)
 - [Table of contents](#table-of-contents)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Development](#development)
 - [Contribute](#contribute)
-  - [Sponsor](#sponsor)
   - [Adding new features or fixing bugs](#adding-new-features-or-fixing-bugs)
 - [License](#license)
 - [Footer](#footer)
@@ -83,6 +97,20 @@ Following this steps, **they should be able to run this in their device.**
 
 A method I use is after completing the README, I go through the instructions from scratch and check if it is working. -->
 
+1. Clone the repo
+   ```sh
+    git clone https://github.com/obeymyshinnyrod/import-blog/
+   ```
+2. Install the NPM packages
+   ```sh
+       npm install
+   ```
+3. To run the app
+   ```sh
+       ng serve
+   ```
+4. The project is live on "http://localhost:4200/"
+
 <!-- Here is a sample instruction:
 
 To use this project, first clone the repo on your device using the command below:
@@ -90,12 +118,6 @@ To use this project, first clone the repo on your device using the command below
 ```git init```
 
 ```git clone https://github.com/navendu-pottekkat/nsfw-filter.git``` -->
-
-# Usage
-
-[(Back to top)](#table-of-contents)
-
-<!-- This is optional and it is used to give the user info on how to use the project after installation. This could be added in the Installation section also. -->
 
 # Development
 
@@ -109,6 +131,10 @@ You could also give specific instructions to how they can setup their developmen
 
 Ideally, you should keep the README simple. If you need to add more complex explanations, use a wiki. Check out [this wiki](https://github.com/navendu-pottekkat/nsfw-filter/wiki) for inspiration. -->
 
+After the Installation phase you can modify and run the code on your local host for that you need to have basic knowledge of <a href="https://angular.io/">Angular.</a>
+
+Ideally you can pick up issues from the issues tab in the repo and work on them or if you wanna add an new feature you can push the code on a new branch with describing the feature and making sure there are now merge errors.
+
 # Contribute
 
 [(Back to top)](#table-of-contents)
@@ -117,15 +143,7 @@ Ideally, you should keep the README simple. If you need to add more complex expl
 
 Also this shows how you can add subsections within a section. -->
 
-### Sponsor
-
-[(Back to top)](#table-of-contents)
-
-<!-- Your project is gaining traction and it is being used by thousands of people(***with this README there will be even more***). Now it would be a good time to look for people or organisations to sponsor your project. This could be because you are not generating any revenue from your project and you require money for keeping the project alive.
-
-You could add how people can sponsor your project in this section. Add your patreon or GitHub sponsor link here for easy access.
-
-A good idea is to also display the sponsors with their organisation logos or badges to show them your love!(*Someday I will get a sponsor and I can show my love*) -->
+You can check the issues tab if you wanna contribute and help out with the project.
 
 ### Adding new features or fixing bugs
 
@@ -138,6 +156,14 @@ You could also give guidelines for submitting and issue or a pull request to you
 Personally and by standard, you should use a [issue template](https://github.com/navendu-pottekkat/nsfw-filter/blob/master/ISSUE_TEMPLATE.md) and a [pull request template](https://github.com/navendu-pottekkat/nsfw-filter/blob/master/PULL_REQ_TEMPLATE.md)(click for examples) so that when a user opens a new issue they could easily format it as per your project guidelines.
 
 You could also add contact details for people to get in touch with you regarding your project. -->
+
+Please use the issue tab on github to raise any bugs or new features that you would love.
+
+For helping out with the issues you can use refrences like these
+`sh close, closed, fix, fixed, resolve, resolved `
+and add the pull request on a new branch
+
+To get in touch with you can use the discussion tab here on the repo
 
 # License
 
@@ -159,8 +185,6 @@ I personally add the name of the license and provide a link to it like below. --
 
 Let's make it an image because by now you have realised that multimedia in images == cool(*please notice the subtle programming joke). -->
 
-Leave a star in GitHub, give a clap in Medium and share this guide if you found this helpful.
-
 <!-- Add the footer here -->
 
-<!-- ![Footer](https://github.com/navendu-pottekkat/awesome-readme/blob/master/fooooooter.png) -->
+![Footer](https://github.com/navendu-pottekkat/awesome-readme/blob/master/fooooooter.png)
