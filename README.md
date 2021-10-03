@@ -4,7 +4,6 @@
 
 <!-- Add buttons here -->
 <span>
-<img src="https://img.shields.io/github/followers/obeymyshinnyrod?style=social">
 <img src="https://img.shields.io/github/languages/code-size/obeymyshinnyrod/import-blog?style=social">
 <img src="https://img.shields.io/tokei/lines/github/obeymyshinnyrod/import-blog?style=social">
 <img src="https://img.shields.io/github/issues/obeymyshinnyrod/import-blog?style=social">
@@ -59,7 +58,15 @@ I use [**Shields IO**](https://shields.io/) for making badges. It is a simple an
 
 # Preview
 
-![Random GIF](https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif)
+<!-- ![Random GIF](https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif) -->
+
+![Random GIF](https://media.giphy.com/media/C4sYJ36SrxrDDSqDoB/giphy.gif)
+
+<p align="center"><a href="https://friendly-stonebraker-f4152a.netlify.app">Live site</a></p>
+
+
+
+
 
 <!-- Add a demo for your project -->
 
