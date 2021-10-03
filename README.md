@@ -143,7 +143,13 @@ Ideally you can pick up issues from the issues tab in the repo and work on them 
 
 Also this shows how you can add subsections within a section. -->
 
-You can check the issues tab if you wanna contribute and help out with the project.
+You can check the issues tab if you wanna contribute and help out with the project and upon finish the pull request you can push it to a new branch with relevent name
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ### Adding new features or fixing bugs
 
