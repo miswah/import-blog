@@ -174,7 +174,7 @@ You could also add contact details for people to get in touch with you regarding
 Please use the issue tab on github to raise any bugs or new features that you would love.
 
 For helping out with the issues you can use refrences like these
-`sh close, closed, fix, fixed, resolve, resolved `
+` close, closed, fix, fixed, resolve, resolved `
 and add the pull request on a new branch
 
 To get in touch with you can use the discussion tab here on the repo
