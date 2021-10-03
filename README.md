@@ -12,6 +12,7 @@
 <img src="https://img.shields.io/github/last-commit/obeymyshinnyrod/import-blog">
 </span>
 <!-- Describe your project in brief -->
+</br>
 A Jam stack Blog via angular and contentful, where i use <a href="https://www.contentful.com/">contentful </a>as a CMS for angular frontend. This blog uses contentful's content delivery API to fetch blogs for the frontend.
 
 ### Built With
