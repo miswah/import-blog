@@ -25,12 +25,6 @@ export class AppComponent {
     setTimeout(() => {
       /** spinner ends after 5 seconds */
       this.spinner.hide();
-    }, 1000);
-  }
-
-  ngDoCheck(): void {
-    //Called every time that the input properties of a component or a directive are checked. Use it to extend change detection by performing a custom check.
-    //Add 'implements DoCheck' to the class.
-    console.log(this.interceptor.count);
+    }, 500);
   }
 }
