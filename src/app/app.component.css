@@ -31,3 +31,9 @@ body {
 #footer > a:hover {
   text-decoration: none;
 }
+
+.box {
+  display: grid;
+  place-items: center;
+  margin-top: 40vh;
+}

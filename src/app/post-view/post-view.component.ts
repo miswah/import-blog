@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { NgxSpinnerService } from 'ngx-spinner';
 import { CdaService } from '../cda.service';
 
 @Component({
@@ -15,7 +16,11 @@ export class PostViewComponent implements OnInit {
   public tags: any = [];
   public loaded: boolean = false;
 
-  constructor(public contentful: CdaService, public route: ActivatedRoute) {}
+  constructor(
+    public contentful: CdaService,
+    public route: ActivatedRoute,
+    private spinner: NgxSpinnerService
+  ) {}
 
   ngOnInit(): void {
     this.route.paramMap.subscribe((params) => {
@@ -26,6 +31,11 @@ export class PostViewComponent implements OnInit {
         this.loaded = true;
         this.contentful.getTags().subscribe((res) => {
           this.tags = res.items;
+          this.spinner.show();
+          setTimeout(() => {
+            /** spinner ends after 5 seconds */
+            this.spinner.hide();
+          }, 500);
         });
       });
     });

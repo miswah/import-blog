@@ -1,4 +1,7 @@
 import { Component, SimpleChanges } from '@angular/core';
+import { LoadingService } from './loading/loading.service';
+import { NgxSpinnerService } from 'ngx-spinner';
+import { MyHttpInterceptorInterceptor } from './my-http-interceptor.interceptor';
 
 @Component({
   selector: 'app-root',
@@ -7,17 +10,21 @@ import { Component, SimpleChanges } from '@angular/core';
 })
 export class AppComponent {
   title = 'Import-Blog';
-  public loaded: boolean = false;
+  public loaded: boolean = true;
 
+  constructor(
+    public loader: LoadingService,
+    private spinner: NgxSpinnerService,
+    public interceptor: MyHttpInterceptorInterceptor
+  ) {}
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
-    this.loaded = true;
-  }
-
-  ngOnChanges(changes: SimpleChanges): void {
-    //Called before any other lifecycle hook. Use it to inject dependencies, but avoid any serious work here.
-    //Add '${implements OnChanges}' to the class.
-    this.loaded = false;
+    /** spinner starts on init */
+    this.spinner.show();
+    setTimeout(() => {
+      /** spinner ends after 5 seconds */
+      this.spinner.hide();
+    }, 500);
   }
 }
