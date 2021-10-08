@@ -1,5 +1,4 @@
-import { Component, SimpleChanges } from '@angular/core';
-import { LoadingService } from './loading/loading.service';
+import { Component } from '@angular/core';
 import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
@@ -11,10 +10,9 @@ export class AppComponent {
   title = 'Import-Blog';
   public loaded: boolean = true;
 
-  constructor(
-    public loader: LoadingService,
-    private spinner: NgxSpinnerService
-  ) {}
+
+  constructor(private spinner: NgxSpinnerService) {}
+
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.

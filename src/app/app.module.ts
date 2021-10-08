@@ -4,27 +4,27 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { CdaService } from './cda.service';
-import { HomepageComponent } from './homepage/homepage.component';
-import { BlogListComponent } from './blog-list/blog-list.component';
-import { FeaturedBlogComponent } from './featured-blog/featured-blog.component';
-import { PostViewComponent } from './post-view/post-view.component';
+
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { LoadingComponent } from './loading/loading.component';
-import { NetworkInterceptor } from './loading/network.interceptor';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Import library module
 import { NgxSpinnerModule } from 'ngx-spinner';
 
+
+import { BlogShowcaseComponent } from './views/blog-showcase/blog-showcase.component';
+import { BlogCardsComponent } from './views/blog-cards/blog-cards.component';
+import { BlogViewComponent } from './views/blog-view/blog-view.component';
+import { ContentfulManagmentService } from './services/contentful-managment.service';
+
+
 @NgModule({
   declarations: [
     AppComponent,
-    HomepageComponent,
-    BlogListComponent,
-    FeaturedBlogComponent,
-    PostViewComponent,
-    LoadingComponent,
+    BlogShowcaseComponent,
+    BlogCardsComponent,
+    BlogViewComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,14 +34,9 @@ import { NgxSpinnerModule } from 'ngx-spinner';
     NgxSpinnerModule,
     BrowserAnimationsModule,
   ],
-  providers: [
-    CdaService,
-    {
-      provide: HTTP_INTERCEPTORS,
-      useClass: NetworkInterceptor,
-      multi: true,
-    },
-  ],
+
+  providers: [ContentfulManagmentService],
+
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent],
 })

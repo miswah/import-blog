@@ -5,7 +5,8 @@ import { from } from 'rxjs';
 @Injectable({
   providedIn: 'root',
 })
-export class CdaService {
+export class ContentfulManagmentService {
+  //setting config obj for contentfulAPI
   private CONFIG = {
     space: 'n2er5raejnob',
     accessToken: 'SXFVts5oJcIkn8xojXpeCT31YhlZyPTeR2-MTnz7jxs',
@@ -15,12 +16,13 @@ export class CdaService {
     },
   };
 
+  //creatting cda client
   private cdaClient = createClient({
     space: this.CONFIG.space,
     accessToken: this.CONFIG.accessToken,
   });
-
   constructor() {}
+
   //list of post
   getProducts(query?: object): Promise<Entry<any>[]> {
     return this.cdaClient
@@ -35,16 +37,11 @@ export class CdaService {
       .then((res) => res.items);
   }
 
+  //get one post based on id
   getpost(id: string) {
-    // this.cdaClient
-    //   .getEntry(id)
-    //   .then((entry) => {
-    //     this.post = entry;
-    //   })
-    //   .catch((err) => console.log(err));
     return from(this.cdaClient.getEntry(id));
   }
-
+  //get tags for the post
   getTags() {
     return from(this.cdaClient.getTags());
   }
