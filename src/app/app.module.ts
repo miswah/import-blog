@@ -16,7 +16,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Import library module
 import { NgxSpinnerModule } from 'ngx-spinner';
-import { MyHttpInterceptorInterceptor } from './my-http-interceptor.interceptor';
 
 @NgModule({
   declarations: [
@@ -42,7 +41,6 @@ import { MyHttpInterceptorInterceptor } from './my-http-interceptor.interceptor'
       useClass: NetworkInterceptor,
       multi: true,
     },
-    MyHttpInterceptorInterceptor,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent],
