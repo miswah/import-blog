@@ -1,15 +1,25 @@
 import { Component, OnInit } from '@angular/core';
+import { ContentfulManagmentService } from 'src/app/services/contentful-managment.service';
 
 @Component({
   selector: 'app-blog-cards',
   templateUrl: './blog-cards.component.html',
-  styleUrls: ['./blog-cards.component.css']
+  styleUrls: ['./blog-cards.component.css'],
 })
 export class BlogCardsComponent implements OnInit {
-
-  constructor() { }
+  blogs: Array<any> = [];
+  dates: string = '';
+  posts: Array<any> = [];
+  hover: boolean = false;
+  constructor(private cdaService: ContentfulManagmentService) {}
 
   ngOnInit(): void {
+    this.getBlogs();
   }
 
+  getBlogs() {
+    this.cdaService.getBlogs().then((data: any) => {
+      this.blogs = data;
+    });
+  }
 }

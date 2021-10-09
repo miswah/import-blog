@@ -17,6 +17,9 @@ import { BlogCardsComponent } from './views/blog-cards/blog-cards.component';
 import { BlogViewComponent } from './views/blog-view/blog-view.component';
 import { ContentfulManagmentService } from './services/contentful-managment.service';
 
+//NPM packages
+import { NgScrollbarModule } from 'ngx-scrollbar';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +34,7 @@ import { ContentfulManagmentService } from './services/contentful-managment.serv
     HttpClientModule,
     NgxSpinnerModule,
     BrowserAnimationsModule,
+    NgScrollbarModule,
   ],
   providers: [ContentfulManagmentService],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
