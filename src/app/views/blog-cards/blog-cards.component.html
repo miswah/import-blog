@@ -1,1 +1,30 @@
-<p>blog-cards works!</p>
+<link href="https://css.gg/arrow-down-o.css" rel="stylesheet" />
+
+<div *ngFor="let blog of blogs">
+  <div class="card animate__bounceIn">
+    <div class="thumbnail">
+      <img class="left" [src]="blog.fields.featuredImage.fields.file.url" />
+    </div>
+    <div class="right">
+      <h1>{{ blog.fields.title }}</h1>
+      <div class="separator"></div>
+      <p>
+        {{ blog.fields.description }}
+      </p>
+    </div>
+
+    <div class="date">
+      <h5>{{ blog.sys.createdAt | date: "d" }}</h5>
+      <h6>{{ blog.sys.createdAt | date: "MMMM" }}</h6>
+    </div>
+
+    <ul>
+      <li><i class="fa fa-eye fa-2x"></i></li>
+      <li><i class="fa fa-heart-o fa-2x"></i></li>
+      <li><i class="fa fa-envelope-o fa-2x"></i></li>
+      <li><i class="fa fa-share-alt fa-2x"></i></li>
+    </ul>
+
+    <div class="fab"><i class="fa fa-arrow-down fa-3x"> </i></div>
+  </div>
+</div>

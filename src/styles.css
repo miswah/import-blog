@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-eye:before {
+  content: "\f06e";
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-heart:before {
+  content: "\f004";
+}

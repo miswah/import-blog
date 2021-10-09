@@ -12,12 +12,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // Import library module
 import { NgxSpinnerModule } from 'ngx-spinner';
 
-
 import { BlogShowcaseComponent } from './views/blog-showcase/blog-showcase.component';
 import { BlogCardsComponent } from './views/blog-cards/blog-cards.component';
 import { BlogViewComponent } from './views/blog-view/blog-view.component';
 import { ContentfulManagmentService } from './services/contentful-managment.service';
-
 
 @NgModule({
   declarations: [

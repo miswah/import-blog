@@ -24,7 +24,7 @@ export class ContentfulManagmentService {
   constructor() {}
 
   //list of post
-  getProducts(query?: object): Promise<Entry<any>[]> {
+  getBlogs(query?: object): Promise<Entry<any>[]> {
     return this.cdaClient
       .getEntries(
         Object.assign(
