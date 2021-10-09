@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Castoro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.container-fluid {
+  margin: 0%;
+  padding: 0%;
+}
+
+.col-md-6 {
+  padding: 0%;
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+h1 {
+  font-family: "Castoro", serif;
+  text-align: center;
+  font-size: 4.5rem;
+  margin-bottom: 3rem;
+  color: #1875d0;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 10%;
+}
+
+.text-box {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.tags {
+  font-weight: 200;
+  margin: 0%;
+}
+
+a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: black;
+  margin-left: 45%;
+}
+
+a:hover {
+  border-bottom: 2px #1875d0 solid;
+  padding-bottom: 5px;
+}
+
+.btt {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: grey;
+}
+
+.btt:hover {
+  color: #1875d0;
+}
+
+.buttons {
+  position: absolute;
+  left: 95%;
+  bottom: 35%;
+}
+
+.lines {
+  border: 1px #1875d0 solid;
+}
+
+.scroll {
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 90%;
+}

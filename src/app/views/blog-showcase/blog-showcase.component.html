@@ -1,1 +1,43 @@
-<p>blog-showcase works!</p>
+<link href="https://css.gg/arrow-left.css" rel="stylesheet" />
+
+<div class="container-fluid" *ngIf="loaded">
+  <div class="row">
+    <div class="col-md-6 col-sm-12 mx-auto">
+      <img
+        [src]="blog.fields.featuredImage.fields.file.url"
+        alt=""
+        class="img-fluid hero shadow mb-5 bg-white rounded"
+      />
+    </div>
+    <div class="col-md-6 col-sm-12 mx-auto my-auto text-box">
+      <div *ngFor="let tag of blog.metadata.tags; let last = last">
+        <p class="tags">
+          <span>{{ tag.sys.id }}</span
+          ><span *ngIf="!last">,</span>
+        </p>
+      </div>
+      <h1>{{ blog.fields.title }}</h1>
+      <p>{{ blog.fields.description }}</p>
+      <a [routerLink]="['/view', blog.sys.id]">READ MORE</a>
+      <div class="buttons">
+        <button class="btt" (click)="fetch(0)">
+          1
+          <div class="lines l1" *ngIf="featuredBlogNo == 0"></div>
+        </button>
+        <button class="btt" (click)="fetch(1)">
+          2
+          <div class="lines l2" *ngIf="featuredBlogNo == 1"></div>
+        </button>
+        <button class="btt" (click)="fetch(2)">
+          3
+          <div class="lines l3" *ngIf="featuredBlogNo == 2"></div>
+        </button>
+      </div>
+
+      <div class="scroll">
+        <i class="gg-arrow-left"></i>
+        <h5>SCROLL</h5>
+      </div>
+    </div>
+  </div>
+</div>
