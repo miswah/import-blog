@@ -36,4 +36,9 @@ export class BlogShowcaseComponent implements OnInit {
     this.featuredBlogNo = id;
     this.blog = this.featuredBlogs[id];
   }
+
+  //scroll out of feaured Blog
+  scroll(el: HTMLElement) {
+    el.scrollIntoView({ behavior: 'smooth' });
+  }
 }

@@ -6,7 +6,7 @@ import { BlogViewComponent } from './views/blog-view/blog-view.component';
 import { HomepageComponent } from './views/homepage/homepage.component';
 
 const routes: Routes = [
-  { path: 'home', component: BlogViewComponent },
+  { path: 'home', component: HomepageComponent},
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'view/:id', component: BlogViewComponent },
 ];

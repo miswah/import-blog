@@ -93,3 +93,13 @@ a:hover {
   position: absolute;
   right: 90%;
 }
+
+.blink_me {
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

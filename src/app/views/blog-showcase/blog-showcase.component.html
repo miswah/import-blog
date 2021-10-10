@@ -34,10 +34,12 @@
         </button>
       </div>
 
-      <div class="scroll">
+      <div class="scroll blink_me">
         <i class="gg-arrow-left"></i>
-        <h5>SCROLL</h5>
+        <h5 (click)="scroll(target)">SCROLL</h5>
       </div>
     </div>
   </div>
 </div>
+
+<div #target></div>
