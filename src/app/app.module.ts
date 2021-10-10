@@ -17,6 +17,8 @@ import { BlogCardsComponent } from './views/blog-cards/blog-cards.component';
 import { BlogViewComponent } from './views/blog-view/blog-view.component';
 import { ContentfulManagmentService } from './services/contentful-managment.service';
 import { HomepageComponent } from './views/homepage/homepage.component';
+import { NavbarComponent } from './shared/components/navbar/navbar.component';
+import { FooterComponent } from './shared/components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { HomepageComponent } from './views/homepage/homepage.component';
     BlogCardsComponent,
     BlogViewComponent,
     HomepageComponent,
+    NavbarComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
