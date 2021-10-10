@@ -1,10 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 import { ContentfulManagmentService } from 'src/app/services/contentful-managment.service';
+import {
+  trigger,
+  transition,
+  state,
+  style,
+  animate,
+} from '@angular/animations';
 
 @Component({
   selector: 'app-blog-showcase',
   templateUrl: './blog-showcase.component.html',
   styleUrls: ['./blog-showcase.component.css'],
+  animations: [
+    trigger('simpleFadeAnimation', [
+      state('in', style({ opacity: 1 })),
+      transition(':enter', [style({ opacity: 0 }), animate(600)]),
+      transition(':leave', animate(600, style({ opacity: 0 }))),
+    ]),
+  ],
 })
 export class BlogShowcaseComponent implements OnInit {
   featuredBlogNo: number = 0;
