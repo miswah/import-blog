@@ -16,6 +16,7 @@ import { BlogShowcaseComponent } from './views/blog-showcase/blog-showcase.compo
 import { BlogCardsComponent } from './views/blog-cards/blog-cards.component';
 import { BlogViewComponent } from './views/blog-view/blog-view.component';
 import { ContentfulManagmentService } from './services/contentful-managment.service';
+import { HomepageComponent } from './views/homepage/homepage.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ContentfulManagmentService } from './services/contentful-managment.serv
     BlogShowcaseComponent,
     BlogCardsComponent,
     BlogViewComponent,
+    HomepageComponent,
   ],
   imports: [
     BrowserModule,
