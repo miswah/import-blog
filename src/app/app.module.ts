@@ -19,6 +19,8 @@ import { ContentfulManagmentService } from './services/contentful-managment.serv
 import { HomepageComponent } from './views/homepage/homepage.component';
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
+import { AboutMeComponent } from './shared/components/about-me/about-me.component';
+import { AboutTheBlogComponent } from './shared/components/about-the-blog/about-the-blog.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { FooterComponent } from './shared/components/footer/footer.component';
     HomepageComponent,
     NavbarComponent,
     FooterComponent,
+    AboutMeComponent,
+    AboutTheBlogComponent,
   ],
   imports: [
     BrowserModule,

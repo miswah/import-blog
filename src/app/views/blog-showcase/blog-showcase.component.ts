@@ -36,7 +36,7 @@ export class BlogShowcaseComponent implements OnInit {
   getBlogs() {
     this.cdaService.getBlogs().then((data: any) => {
       //setting featured Blogs
-      for (let i = data.length - 1; i > data.length - 4; i--) {
+      for (let i = 0; i < 4; i++) {
         this.featuredBlogs.push(data[i]);
       }
       this.blog = this.featuredBlogs[0];

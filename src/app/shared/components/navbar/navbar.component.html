@@ -2,13 +2,18 @@
 <label for="menu-icon"></label>
 <nav class="nav">
   <ul class="pt-5">
-    <li><a href="#">About Me</a></li>
-    <li><a href="#">Contact</a></li>
+    <li><a [routerLink]="['home']">home</a></li>
+    <li><a [routerLink]="['about-me']">About Me</a></li>
+    <li><a [routerLink]="['about-the-blog']">About the blog</a></li>
     <li>
       <a href="https://github.com/obeymyshinnyrod/import-blog"
         >Github Repository</a
       >
     </li>
-    <li><a href="#">Other Works</a></li>
+    <li>
+      <a href="https://github.com/obeymyshinnyrod?tab=repositories"
+        >Other Works</a
+      >
+    </li>
   </ul>
 </nav>
