@@ -6,11 +6,10 @@
 <!-- Add buttons here -->
 <span>
 <img src="https://img.shields.io/github/languages/code-size/obeymyshinnyrod/import-blog?style=social">
-<img src="https://img.shields.io/tokei/lines/github/obeymyshinnyrod/import-blog?style=social">
 <img src="https://img.shields.io/github/issues/obeymyshinnyrod/import-blog?style=social">
 <img src="https://img.shields.io/github/commit-activity/w/obeymyshinnyrod/import-blog?style=social">
 <img src="https://img.shields.io/github/last-commit/obeymyshinnyrod/import-blog">
-  [![Netlify Status](https://api.netlify.com/api/v1/badges/84da2356-7451-4038-8cb0-1759aa674542/deploy-status)](https://app.netlify.com/sites/friendly-stonebraker-f4152a/deploys)
+<img src="https://api.netlify.com/api/v1/badges/84da2356-7451-4038-8cb0-1759aa674542/deploy-status">
 </span>
 <!-- Describe your project in brief -->
 </br>
