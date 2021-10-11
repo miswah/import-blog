@@ -1,6 +1,6 @@
 <link href="https://css.gg/arrow-down-o.css" rel="stylesheet" />
 
-<div *ngFor="let blog of blogs">
+<div *ngFor="let blog of blogs; let i = index">
   <div class="card animate__bounceIn">
     <div class="thumbnail">
       <img class="left" [src]="blog.fields.featuredImage.fields.file.url" />
