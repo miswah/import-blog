@@ -6,10 +6,10 @@
 <!-- Add buttons here -->
 <span>
 <img src="https://img.shields.io/github/languages/code-size/obeymyshinnyrod/import-blog?style=social">
-<img src="https://img.shields.io/tokei/lines/github/obeymyshinnyrod/import-blog?style=social">
 <img src="https://img.shields.io/github/issues/obeymyshinnyrod/import-blog?style=social">
 <img src="https://img.shields.io/github/commit-activity/w/obeymyshinnyrod/import-blog?style=social">
 <img src="https://img.shields.io/github/last-commit/obeymyshinnyrod/import-blog">
+<img src="https://api.netlify.com/api/v1/badges/6635aaa1-8434-4808-9cfc-8e0e5995db19/deploy-status">
 </span>
 <!-- Describe your project in brief -->
 </br>
@@ -61,7 +61,7 @@ I use [**Shields IO**](https://shields.io/) for making badges. It is a simple an
 
 ![Random GIF](https://media.giphy.com/media/C4sYJ36SrxrDDSqDoB/giphy.gif)
 
-<p align="center"><a href="https://friendly-stonebraker-f4152a.netlify.app">Live site</a></p>
+<p align="center"><a href="import-blog.netlify.app">Live site</a></p>
 
 
 
@@ -113,19 +113,18 @@ A method I use is after completing the README, I go through the instructions fro
    ```sh
        npm install
    ```
-3. To run the app
+3. You need to get your space set up on contentful signup <a href="https://www.contentful.com/">here</a>
+4. Set up your content model at Content Model tab
+5. Add your blog posts on Content tab
+6. Now set up the enviroment.ts file
+7. Visit the <a href="https://www.contentful.com/developers/docs/">documentation</a> for more details
+8. To run the app
    ```sh
        ng serve
    ```
-4. The project is live on "http://localhost:4200/"
+9. The project is live on "http://localhost:4200/"
 
-<!-- Here is a sample instruction:
 
-To use this project, first clone the repo on your device using the command below:
-
-```git init```
-
-```git clone https://github.com/navendu-pottekkat/nsfw-filter.git``` -->
 
 # Development
 
