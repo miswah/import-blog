@@ -1,0 +1,781 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>import-blog documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">import-blog documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  BlogViewComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/views/blog-view/blog-view.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-blog-view</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./blog-view.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./blog-view.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#blogid" >blogid</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#body" >body</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#contentful" >contentful</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#loaded" >loaded</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#post" >post</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#route" >route</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#tags" >tags</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(contentful: <a href="../injectables/ContentfulManagmentService.html" target="_self">ContentfulManagmentService</a>, route: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/views/blog-view/blog-view.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>contentful</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ContentfulManagmentService.html" target="_self" >ContentfulManagmentService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>route</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="23"
+                            class="link-to-prism">src/app/views/blog-view/blog-view.component.ts:23</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="blogid"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>blogid</b></span>
+                        <a href="#blogid"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/views/blog-view/blog-view.component.ts:12</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="body"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>body</b></span>
+                        <a href="#body"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/views/blog-view/blog-view.component.ts:14</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="contentful"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>contentful</b></span>
+                        <a href="#contentful"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/ContentfulManagmentService.html" target="_self" >ContentfulManagmentService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/views/blog-view/blog-view.component.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loaded"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>loaded</b></span>
+                        <a href="#loaded"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/views/blog-view/blog-view.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="post"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>post</b></span>
+                        <a href="#post"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/views/blog-view/blog-view.component.ts:13</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="route"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>route</b></span>
+                        <a href="#route"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/views/blog-view/blog-view.component.ts:20</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="tags"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>tags</b></span>
+                        <a href="#tags"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/views/blog-view/blog-view.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { ActivatedRoute } from &#x27;@angular/router&#x27;;
+import { ContentfulManagmentService } from &#x27;src/app/services/contentful-managment.service&#x27;;
+
+@Component({
+  selector: &#x27;app-blog-view&#x27;,
+  templateUrl: &#x27;./blog-view.component.html&#x27;,
+  styleUrls: [&#x27;./blog-view.component.css&#x27;],
+})
+export class BlogViewComponent implements OnInit {
+  //new implementation
+  public blogid: string &#x3D; &#x27;&#x27;;
+  public post: any &#x3D; [];
+  public body: any &#x3D; [];
+  public tags: any &#x3D; [];
+  public loaded: boolean &#x3D; false;
+
+  constructor(
+    public contentful: ContentfulManagmentService,
+    public route: ActivatedRoute
+  ) {}
+
+  ngOnInit(): void {
+    this.route.paramMap.subscribe((params) &#x3D;&gt; {
+      this.blogid &#x3D; params.get(&#x27;id&#x27;);
+      this.contentful.getpost(this.blogid).subscribe((res) &#x3D;&gt; {
+        this.post &#x3D; res;
+        this.body &#x3D; this.post.fields.body.content;
+        this.loaded &#x3D; true;
+        this.contentful.getTags().subscribe((res) &#x3D;&gt; {
+          this.tags &#x3D; res.items;
+        });
+      });
+    });
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div *ngIf&#x3D;&quot;loaded&quot; class&#x3D;&quot;container mb-5&quot;&gt;
+  &lt;div class&#x3D;&quot;title&quot;&gt;
+    &lt;h1 class&#x3D;&quot;mb&quot;&gt;{{ post.fields.title }}&lt;/h1&gt;
+
+    &lt;p class&#x3D;&quot;date&quot;&gt;Published on {{ post.sys.createdAt | date }}&lt;/p&gt;
+    &lt;span *ngFor&#x3D;&quot;let tag of tags; let last &#x3D; last; let index &#x3D; index&quot;&gt;
+      &lt;span class&#x3D;&quot;tags&quot;&gt;{{ tag.name }}&lt;span *ngIf&#x3D;&quot;!last&quot;&gt;, &lt;/span&gt;&lt;/span&gt;
+    &lt;/span&gt;
+
+    &lt;img
+      [src]&#x3D;&quot;post.fields.featuredImage.fields.file.url&quot;
+      class&#x3D;&quot;img-fluid&quot;
+      alt&#x3D;&quot;&quot;
+    /&gt;
+
+    &lt;p class&#x3D;&quot;description&quot;&gt;{{ post.fields.descriptions }}&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div *ngFor&#x3D;&quot;let content of body&quot; class&#x3D;&quot;body&quot;&gt;
+    &lt;div *ngIf&#x3D;&quot;content.nodeType &#x3D;&#x3D;&#x3D; &#x27;heading-2&#x27;&quot; class&#x3D;&quot;margin&quot;&gt;
+      &lt;h2&gt;{{ content.content[0].value }}&lt;/h2&gt;
+    &lt;/div&gt;
+    &lt;div *ngIf&#x3D;&quot;content.nodeType &#x3D;&#x3D;&#x3D; &#x27;paragraph&#x27;&quot; class&#x3D;&quot;margin&quot;&gt;
+      {{ content.content[0].value }}
+    &lt;/div&gt;
+    &lt;div *ngIf&#x3D;&quot;content.nodeType &#x3D;&#x3D;&#x3D; &#x27;heading-3&#x27;&quot; class&#x3D;&quot;margin&quot;&gt;
+      &lt;h3&gt;{{ content.content[0].value }}&lt;/h3&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;p class&#x3D;&quot;body&quot;&gt;&quot;{{ post.fields.summary }}&quot;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./blog-view.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import url(&quot;https://fonts.googleapis.com/css2?family&#x3D;Playfair+Display&amp;family&#x3D;Raleway:ital,wght@1,100&amp;display&#x3D;swap&quot;);
+@import url(&quot;https://fonts.googleapis.com/css2?family&#x3D;Quicksand:wght@300&amp;display&#x3D;swap&quot;);
+@import url(&quot;https://fonts.googleapis.com/css2?family&#x3D;Montserrat:ital,wght@1,100&amp;display&#x3D;swap&quot;);
+@import url(&quot;https://fonts.googleapis.com/css2?family&#x3D;Raleway:ital,wght@1,100&amp;display&#x3D;swap&quot;);
+
+.container {
+  display: grid;
+  grid-template-columns: auto, 1fr;
+}
+
+.body {
+  grid-column: 1/2;
+  font-family: &quot;Raleway&quot;, sans-serif;
+  font-weight: 900;
+  font-size: 3vh;
+  margin-left: 2vh;
+  margin-right: 2vh;
+}
+
+@media screen and (max-width: 500px) {
+  .body {
+    font-size: 2vh;
+  }
+}
+
+.title {
+  grid-column: 1/2;
+  justify-self: center;
+  margin: 3vw;
+}
+
+h1 {
+  text-align: center;
+  font-family: &quot;Playfair Display&quot;, serif;
+  font-size: 4rem;
+  margin-bottom: 5vh;
+  color: #1875d0;
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 10vw;
+  }
+}
+
+h2 {
+  font-size: 4vh;
+  font-family: &quot;Playfair Display&quot;, serif;
+  text-align: center;
+  border-bottom: 5px black solid;
+}
+
+h3 {
+  font-size: 4vh;
+  font-family: &quot;Playfair Display&quot;, serif;
+}
+
+.description {
+  text-align: center;
+  font-family: &quot;Montserrat&quot;, sans-serif;
+  font-weight: 900;
+  color: black;
+  margin-top: 3vh;
+  font-size: 2vh;
+}
+
+.margin {
+  margin: 2vh;
+}
+
+.date {
+  font-weight: 100;
+  font-size: 1.5rem;
+}
+
+.tags {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #1875d0;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div *ngIf="loaded" class="container mb-5">  <div class="title">    <h1 class="mb">{{ post.fields.title }}</h1>    <p class="date">Published on {{ post.sys.createdAt | date }}</p>    <span *ngFor="let tag of tags; let last = last; let index = index">      <span class="tags">{{ tag.name }}<span *ngIf="!last">, </span></span>    </span>    <img      [src]="post.fields.featuredImage.fields.file.url"      class="img-fluid"      alt=""    />    <p class="description">{{ post.fields.descriptions }}</p>  </div>  <div *ngFor="let content of body" class="body">    <div *ngIf="content.nodeType === \'heading-2\'" class="margin">      <h2>{{ content.content[0].value }}</h2>    </div>    <div *ngIf="content.nodeType === \'paragraph\'" class="margin">      {{ content.content[0].value }}    </div>    <div *ngIf="content.nodeType === \'heading-3\'" class="margin">      <h3>{{ content.content[0].value }}</h3>    </div>  </div>  <div>    <p class="body">"{{ post.fields.summary }}"</p>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AboutMeComponent', 'selector': 'app-about-me'},{'name': 'AboutTheBlogComponent', 'selector': 'app-about-the-blog'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BlogCardsComponent', 'selector': 'app-blog-cards'},{'name': 'BlogShowcaseComponent', 'selector': 'app-blog-showcase'},{'name': 'BlogViewComponent', 'selector': 'app-blog-view'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HomepageComponent', 'selector': 'app-homepage'},{'name': 'NavbarComponent', 'selector': 'app-navbar'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'BlogViewComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'BlogViewComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,940 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>import-blog documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">import-blog documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  BlogShowcaseComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/views/blog-showcase/blog-showcase.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-blog-showcase</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./blog-showcase.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./blog-showcase.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#blog" >blog</a>
+                            </li>
+                            <li>
+                                <a href="#featuredBlogId" >featuredBlogId</a>
+                            </li>
+                            <li>
+                                <a href="#featuredBlogNo" >featuredBlogNo</a>
+                            </li>
+                            <li>
+                                <a href="#featuredBlogs" >featuredBlogs</a>
+                            </li>
+                            <li>
+                                <a href="#loaded" >loaded</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#fetch" >fetch</a>
+                            </li>
+                            <li>
+                                <a href="#getBlogs" >getBlogs</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#scroll" >scroll</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(cdaService: <a href="../injectables/ContentfulManagmentService.html" target="_self">ContentfulManagmentService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/views/blog-showcase/blog-showcase.component.ts:28</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>cdaService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ContentfulManagmentService.html" target="_self" >ContentfulManagmentService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fetch"></a>
+                    <span class="name">
+                        <span ><b>fetch</b></span>
+                        <a href="#fetch"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>fetch(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="49"
+                            class="link-to-prism">src/app/views/blog-showcase/blog-showcase.component.ts:49</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getBlogs"></a>
+                    <span class="name">
+                        <span ><b>getBlogs</b></span>
+                        <a href="#getBlogs"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getBlogs()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="36"
+                            class="link-to-prism">src/app/views/blog-showcase/blog-showcase.component.ts:36</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="31"
+                            class="link-to-prism">src/app/views/blog-showcase/blog-showcase.component.ts:31</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="scroll"></a>
+                    <span class="name">
+                        <span ><b>scroll</b></span>
+                        <a href="#scroll"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>scroll(el: HTMLElement)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="55"
+                            class="link-to-prism">src/app/views/blog-showcase/blog-showcase.component.ts:55</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>el</td>
+                                    <td>
+                                            <code>HTMLElement</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="blog"></a>
+                    <span class="name">
+                        <span ><b>blog</b></span>
+                        <a href="#blog"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/views/blog-showcase/blog-showcase.component.ts:25</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="featuredBlogId"></a>
+                    <span class="name">
+                        <span ><b>featuredBlogId</b></span>
+                        <a href="#featuredBlogId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank" >Number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/views/blog-showcase/blog-showcase.component.ts:27</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="featuredBlogNo"></a>
+                    <span class="name">
+                        <span ><b>featuredBlogNo</b></span>
+                        <a href="#featuredBlogNo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/views/blog-showcase/blog-showcase.component.ts:24</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="featuredBlogs"></a>
+                    <span class="name">
+                        <span ><b>featuredBlogs</b></span>
+                        <a href="#featuredBlogs"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Array&lt;any&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/views/blog-showcase/blog-showcase.component.ts:26</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loaded"></a>
+                    <span class="name">
+                        <span ><b>loaded</b></span>
+                        <a href="#loaded"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/views/blog-showcase/blog-showcase.component.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { ContentfulManagmentService } from &#x27;src/app/services/contentful-managment.service&#x27;;
+import {
+  trigger,
+  transition,
+  state,
+  style,
+  animate,
+} from &#x27;@angular/animations&#x27;;
+
+@Component({
+  selector: &#x27;app-blog-showcase&#x27;,
+  templateUrl: &#x27;./blog-showcase.component.html&#x27;,
+  styleUrls: [&#x27;./blog-showcase.component.css&#x27;],
+  animations: [
+    trigger(&#x27;simpleFadeAnimation&#x27;, [
+      state(&#x27;in&#x27;, style({ opacity: 1 })),
+      transition(&#x27;:enter&#x27;, [style({ opacity: 0 }), animate(600)]),
+      transition(&#x27;:leave&#x27;, animate(600, style({ opacity: 0 }))),
+    ]),
+  ],
+})
+export class BlogShowcaseComponent implements OnInit {
+  featuredBlogNo: number &#x3D; 0;
+  blog: any &#x3D; [];
+  featuredBlogs: Array&lt;any&gt; &#x3D; [];
+  featuredBlogId: Number &#x3D; 0;
+  loaded: boolean &#x3D; false;
+  constructor(private cdaService: ContentfulManagmentService) {}
+
+  ngOnInit(): void {
+    this.getBlogs();
+  }
+
+  //getBlogs
+  getBlogs() {
+    this.cdaService.getBlogs().then((data: any) &#x3D;&gt; {
+      //setting featured Blogs
+      for (let i &#x3D; 0; i &lt; 4; i++) {
+        this.featuredBlogs.push(data[i]);
+      }
+      this.blog &#x3D; this.featuredBlogs[0];
+      console.log(this.featuredBlogs);
+      this.loaded &#x3D; true;
+    });
+  }
+
+  //fetching the featured blog via click on button
+  fetch(id: number) {
+    this.featuredBlogNo &#x3D; id;
+    this.blog &#x3D; this.featuredBlogs[id];
+  }
+
+  //scroll out of feaured Blog
+  scroll(el: HTMLElement) {
+    el.scrollIntoView({ behavior: &#x27;smooth&#x27; });
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;link href&#x3D;&quot;https://css.gg/arrow-left.css&quot; rel&#x3D;&quot;stylesheet&quot; /&gt;
+&lt;div class&#x3D;&quot;container-fluid&quot; *ngIf&#x3D;&quot;loaded&quot; [@simpleFadeAnimation]&#x3D;&quot;&#x27;in&#x27;&quot;&gt;
+  &lt;div class&#x3D;&quot;row&quot;&gt;
+    &lt;div class&#x3D;&quot;col-md-6 col-sm-12 mx-auto&quot;&gt;
+      &lt;img
+        [src]&#x3D;&quot;blog.fields.featuredImage.fields.file.url&quot;
+        alt&#x3D;&quot;&quot;
+        class&#x3D;&quot;img-fluid hero shadow mb-5 bg-white rounded&quot;
+      /&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;col-md-6 col-sm-12 mx-auto my-auto text-box&quot;&gt;
+      &lt;div *ngFor&#x3D;&quot;let tag of blog.metadata.tags; let last &#x3D; last&quot;&gt;
+        &lt;p class&#x3D;&quot;tags&quot;&gt;
+          &lt;span&gt;{{ tag.sys.id }}&lt;/span
+          &gt;&lt;span *ngIf&#x3D;&quot;!last&quot;&gt;,&lt;/span&gt;
+        &lt;/p&gt;
+      &lt;/div&gt;
+      &lt;h1&gt;{{ blog.fields.title }}&lt;/h1&gt;
+      &lt;p&gt;{{ blog.fields.description }}&lt;/p&gt;
+      &lt;a [routerLink]&#x3D;&quot;[&#x27;/view&#x27;, blog.sys.id]&quot;&gt;READ MORE&lt;/a&gt;
+      &lt;div class&#x3D;&quot;buttons&quot;&gt;
+        &lt;button class&#x3D;&quot;btt&quot; (click)&#x3D;&quot;fetch(0)&quot;&gt;
+          1
+          &lt;div class&#x3D;&quot;lines l1&quot; *ngIf&#x3D;&quot;featuredBlogNo &#x3D;&#x3D; 0&quot;&gt;&lt;/div&gt;
+        &lt;/button&gt;
+        &lt;button class&#x3D;&quot;btt&quot; (click)&#x3D;&quot;fetch(1)&quot;&gt;
+          2
+          &lt;div class&#x3D;&quot;lines l2&quot; *ngIf&#x3D;&quot;featuredBlogNo &#x3D;&#x3D; 1&quot;&gt;&lt;/div&gt;
+        &lt;/button&gt;
+        &lt;button class&#x3D;&quot;btt&quot; (click)&#x3D;&quot;fetch(2)&quot;&gt;
+          3
+          &lt;div class&#x3D;&quot;lines l3&quot; *ngIf&#x3D;&quot;featuredBlogNo &#x3D;&#x3D; 2&quot;&gt;&lt;/div&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;scroll blink_me&quot;&gt;
+        &lt;i class&#x3D;&quot;gg-arrow-left&quot;&gt;&lt;/i&gt;
+        &lt;h5 (click)&#x3D;&quot;scroll(target)&quot;&gt;SCROLL&lt;/h5&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div #target&gt;&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./blog-showcase.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import url(&quot;https://fonts.googleapis.com/css2?family&#x3D;Castoro&amp;display&#x3D;swap&quot;);
+@import url(&quot;https://fonts.googleapis.com/css2?family&#x3D;Inter:wght@300&amp;display&#x3D;swap&quot;);
+@import url(&quot;https://fonts.googleapis.com/css2?family&#x3D;Inter:wght@200&amp;display&#x3D;swap&quot;);
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.container-fluid {
+  margin: 0%;
+  padding: 0%;
+}
+
+.col-md-6 {
+  padding: 0%;
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+h1 {
+  font-family: &quot;Castoro&quot;, serif;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  color: #1875d0;
+}
+
+p {
+  font-family: &quot;Inter&quot;, sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 10%;
+}
+
+.text-box {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.tags {
+  font-weight: 200;
+  margin: 0%;
+}
+
+a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: black;
+  margin-left: 45%;
+}
+
+a:hover {
+  border-bottom: 2px #1875d0 solid;
+  padding-bottom: 5px;
+}
+
+.btt {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: grey;
+}
+
+.btt:hover {
+  color: #1875d0;
+}
+
+.buttons {
+  position: absolute;
+  left: 95%;
+  bottom: 35%;
+}
+
+.lines {
+  border: 1px #1875d0 solid;
+}
+
+.scroll {
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 90%;
+}
+
+.blink_me {
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><link href="https://css.gg/arrow-left.css" rel="stylesheet" /><div class="container-fluid" *ngIf="loaded" [@simpleFadeAnimation]="\'in\'">  <div class="row">    <div class="col-md-6 col-sm-12 mx-auto">      <img        [src]="blog.fields.featuredImage.fields.file.url"        alt=""        class="img-fluid hero shadow mb-5 bg-white rounded"      />    </div>    <div class="col-md-6 col-sm-12 mx-auto my-auto text-box">      <div *ngFor="let tag of blog.metadata.tags; let last = last">        <p class="tags">          <span>{{ tag.sys.id }}</span          ><span *ngIf="!last">,</span>        </p>      </div>      <h1>{{ blog.fields.title }}</h1>      <p>{{ blog.fields.description }}</p>      <a [routerLink]="[\'/view\', blog.sys.id]">READ MORE</a>      <div class="buttons">        <button class="btt" (click)="fetch(0)">          1          <div class="lines l1" *ngIf="featuredBlogNo == 0"></div>        </button>        <button class="btt" (click)="fetch(1)">          2          <div class="lines l2" *ngIf="featuredBlogNo == 1"></div>        </button>        <button class="btt" (click)="fetch(2)">          3          <div class="lines l3" *ngIf="featuredBlogNo == 2"></div>        </button>      </div>      <div class="scroll blink_me">        <i class="gg-arrow-left"></i>        <h5 (click)="scroll(target)">SCROLL</h5>      </div>    </div>  </div></div><div #target></div></div>'
+    var COMPONENTS = [{'name': 'AboutMeComponent', 'selector': 'app-about-me'},{'name': 'AboutTheBlogComponent', 'selector': 'app-about-the-blog'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BlogCardsComponent', 'selector': 'app-blog-cards'},{'name': 'BlogShowcaseComponent', 'selector': 'app-blog-showcase'},{'name': 'BlogViewComponent', 'selector': 'app-blog-view'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HomepageComponent', 'selector': 'app-homepage'},{'name': 'NavbarComponent', 'selector': 'app-navbar'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'BlogShowcaseComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'BlogShowcaseComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
