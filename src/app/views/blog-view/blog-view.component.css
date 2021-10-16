@@ -78,3 +78,25 @@ h3 {
   font-size: 1.5rem;
   color: #1875d0;
 }
+
+.go_back {
+  position: absolute;
+  margin-top: 3rem;
+  padding: 1rem;
+  border: 1px black solid;
+  border-radius: 50%;
+  margin-left: -3rem;
+}
+
+.go_back > a {
+  text-decoration: none;
+  color: black;
+}
+
+.go_back > a:hover {
+  color: #1875d0;
+}
+
+.go_back:hover {
+  border: 1px #1875d0 solid;
+}

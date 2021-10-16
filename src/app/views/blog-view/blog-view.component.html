@@ -1,4 +1,9 @@
+<link href="https://css.gg/arrow-left.css" rel="stylesheet" />
+
 <div *ngIf="loaded" class="container mb-5">
+  <div class="go_back">
+    <a [routerLink]="['/home']"><i class="gg-arrow-left"></i></a>
+  </div>
   <div class="title">
     <h1 class="mb">{{ post.fields.title }}</h1>
 

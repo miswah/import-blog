@@ -142,3 +142,17 @@ li {
   -moz-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
 }
+
+.fab > a {
+  text-decoration: none;
+  color: white;
+}
+
+ul > li > a {
+  text-decoration: none;
+  color: grey;
+}
+
+ul > li > a:hover {
+  color: #1875d0;
+}
