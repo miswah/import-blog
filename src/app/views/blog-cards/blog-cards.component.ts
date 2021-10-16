@@ -11,6 +11,7 @@ export class BlogCardsComponent implements OnInit {
   dates: string = '';
   posts: Array<any> = [];
   hover: boolean = false;
+  share: Boolean = false;
   constructor(private cdaService: ContentfulManagmentService) {}
 
   ngOnInit(): void {
@@ -21,5 +22,9 @@ export class BlogCardsComponent implements OnInit {
     this.cdaService.getBlogs().then((data: any) => {
       this.blogs = data;
     });
+  }
+
+  shareShow() {
+    this.share = true;
   }
 }

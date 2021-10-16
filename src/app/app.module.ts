@@ -22,6 +22,12 @@ import { FooterComponent } from './shared/components/footer/footer.component';
 import { AboutMeComponent } from './shared/components/about-me/about-me.component';
 import { AboutTheBlogComponent } from './shared/components/about-the-blog/about-the-blog.component';
 
+import { ShareButtonsModule } from 'ngx-sharebuttons/buttons';
+import { ShareButtonsPopupModule } from 'ngx-sharebuttons/popup';
+import { OverlayModule } from '@angular/cdk/overlay';
+
+import { ShareIconsModule } from 'ngx-sharebuttons/icons';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,6 +47,10 @@ import { AboutTheBlogComponent } from './shared/components/about-the-blog/about-
     HttpClientModule,
     NgxSpinnerModule,
     BrowserAnimationsModule,
+    ShareButtonsModule,
+    ShareButtonsPopupModule,
+    OverlayModule,
+    ShareIconsModule,
   ],
 
   providers: [ContentfulManagmentService],

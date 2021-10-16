@@ -19,12 +19,49 @@
     </div>
 
     <ul>
-      <li><i class="fa fa-eye fa-2x"></i></li>
+      <li>
+        <a [routerLink]="['/view', blog.sys.id]"
+          ><i class="fa fa-eye fa-2x"></i
+        ></a>
+      </li>
       <li><i class="fa fa-heart-o fa-2x"></i></li>
       <li><i class="fa fa-envelope-o fa-2x"></i></li>
-      <li><i class="fa fa-share-alt fa-2x"></i></li>
+      <li>
+        <a (click)="shareShow()"><i class="fa fa-share-alt fa-2x"></i></a>
+      </li>
     </ul>
-
-    <div class="fab"><i class="fa fa-arrow-down fa-3x"> </i></div>
+    <span
+      ><popup-buttons
+        [theme]="'modern-dark'"
+        [include]="[
+          'facebook',
+          'twitter',
+          'linkedin',
+          'pinterest',
+          'reddit',
+          'tumblr',
+          'mix',
+          'viber',
+          'vk',
+          'telegram',
+          'messenger',
+          'whatsapp',
+          'xing',
+          'line',
+          'sms',
+          'email',
+          'print',
+          'copy'
+        ]"
+        [show]="5"
+        [url]="'https://twitter.com/'"
+        [autoSetMeta]="false"
+      ></popup-buttons
+    ></span>
+    <div class="fab">
+      <a [routerLink]="['/view', blog.sys.id]"
+        ><i class="fa fa-arrow-down fa-3x"> </i
+      ></a>
+    </div>
   </div>
 </div>
