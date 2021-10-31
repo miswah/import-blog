@@ -9,7 +9,6 @@
 <img src="https://img.shields.io/github/issues/obeymyshinnyrod/import-blog?style=social">
 <img src="https://img.shields.io/github/commit-activity/w/obeymyshinnyrod/import-blog?style=social">
 <img src="https://img.shields.io/github/last-commit/obeymyshinnyrod/import-blog">
-<img src="https://api.netlify.com/api/v1/badges/6635aaa1-8434-4808-9cfc-8e0e5995db19/deploy-status">
 </span>
 <!-- Describe your project in brief -->
 </br>
@@ -61,7 +60,7 @@ I use [**Shields IO**](https://shields.io/) for making badges. It is a simple an
 
 ![Random GIF](https://media.giphy.com/media/C4sYJ36SrxrDDSqDoB/giphy.gif)
 
-<p align="center"><a href="import-blog.netlify.app">Live site</a></p>
+<p align="center"><a href="https://import-blog-obs5old60-obeymyshinnyrod.vercel.app/home">Live site</a></p>
 
 
 
