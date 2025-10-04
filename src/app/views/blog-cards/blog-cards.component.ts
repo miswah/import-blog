@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { ContentfulManagmentService } from 'src/app/services/contentful-managment.service';
 
 @Component({
-  selector: 'app-blog-cards',
-  templateUrl: './blog-cards.component.html',
-  styleUrls: ['./blog-cards.component.css'],
+    selector: 'app-blog-cards',
+    templateUrl: './blog-cards.component.html',
+    styleUrls: ['./blog-cards.component.css'],
+    standalone: false
 })
 export class BlogCardsComponent implements OnInit {
   blogs: Array<any> = [];

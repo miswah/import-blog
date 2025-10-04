@@ -3,9 +3,10 @@ import { ActivatedRoute } from '@angular/router';
 import { ContentfulManagmentService } from 'src/app/services/contentful-managment.service';
 
 @Component({
-  selector: 'app-blog-view',
-  templateUrl: './blog-view.component.html',
-  styleUrls: ['./blog-view.component.css'],
+    selector: 'app-blog-view',
+    templateUrl: './blog-view.component.html',
+    styleUrls: ['./blog-view.component.css'],
+    standalone: false
 })
 export class BlogViewComponent implements OnInit {
   //new implementation
