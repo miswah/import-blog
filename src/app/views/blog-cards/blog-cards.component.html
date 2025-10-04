@@ -1,37 +1,36 @@
 <link href="https://css.gg/arrow-down-o.css" rel="stylesheet" />
 
-<div *ngFor="let blog of blogs; let i = index">
-  <div class="card animate__bounceIn">
-    <div class="thumbnail">
-      <img class="left" [src]="blog.fields.featuredImage.fields.file.url" />
-    </div>
-    <div class="right">
-      <h1>{{ blog.fields.title }}</h1>
-      <div class="separator"></div>
-      <p>
-        {{ blog.fields.description }}
-      </p>
-    </div>
-
-    <div class="date">
-      <h5>{{ blog.sys.createdAt | date: "d" }}</h5>
-      <h6>{{ blog.sys.createdAt | date: "MMMM" }}</h6>
-    </div>
-
-    <ul>
-      <li>
-        <a [routerLink]="['/view', blog.sys.id]"
-          ><i class="fa fa-eye fa-2x"></i
-        ></a>
-      </li>
-      <li><i class="fa fa-heart-o fa-2x"></i></li>
-      <li><i class="fa fa-envelope-o fa-2x"></i></li>
-      <li>
-        <a (click)="shareShow()"><i class="fa fa-share-alt fa-2x"></i></a>
-      </li>
-    </ul>
-    <span
-      ><popup-buttons
+@for (blog of blogs; track blog; let i = $index) {
+  <div>
+    <div class="card animate__bounceIn">
+      <div class="thumbnail">
+        <img class="left" [src]="blog.fields.featuredImage.fields.file.url" />
+      </div>
+      <div class="right">
+        <h1>{{ blog.fields.title }}</h1>
+        <div class="separator"></div>
+        <p>
+          {{ blog.fields.description }}
+        </p>
+      </div>
+      <div class="date">
+        <h5>{{ blog.sys.createdAt | date: "d" }}</h5>
+        <h6>{{ blog.sys.createdAt | date: "MMMM" }}</h6>
+      </div>
+      <ul>
+        <li>
+          <a [routerLink]="['/view', blog.sys.id]"
+            ><i class="fa fa-eye fa-2x"></i
+          ></a>
+        </li>
+        <li><i class="fa fa-heart-o fa-2x"></i></li>
+        <li><i class="fa fa-envelope-o fa-2x"></i></li>
+        <li>
+          <a (click)="shareShow()"><i class="fa fa-share-alt fa-2x"></i></a>
+        </li>
+      </ul>
+      <span
+        ><popup-buttons
         [theme]="'modern-dark'"
         [include]="[
           'facebook',
@@ -56,12 +55,13 @@
         [show]="5"
         [url]="'https://twitter.com/'"
         [autoSetMeta]="false"
-      ></popup-buttons
-    ></span>
-    <div class="fab">
-      <a [routerLink]="['/view', blog.sys.id]"
-        ><i class="fa fa-arrow-down fa-3x"> </i
-      ></a>
+        ></popup-buttons
+      ></span>
+      <div class="fab">
+        <a [routerLink]="['/view', blog.sys.id]"
+          ><i class="fa fa-arrow-down fa-3x"> </i
+        ></a>
+      </div>
     </div>
   </div>
-</div>
+}

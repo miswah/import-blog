@@ -1,37 +1,48 @@
 <link href="https://css.gg/arrow-left.css" rel="stylesheet" />
 
-<div *ngIf="loaded" class="container mb-5">
-  <div class="go_back">
-    <a [routerLink]="['/home']"><i class="gg-arrow-left"></i></a>
-  </div>
-  <div class="title">
-    <h1 class="mb">{{ post.fields.title }}</h1>
-
-    <p class="date">Published on {{ post.sys.createdAt | date }}</p>
-    <span *ngFor="let tag of tags; let last = last; let index = index">
-      <span class="tags">{{ tag.name }}<span *ngIf="!last">, </span></span>
-    </span>
-
-    <img
-      [src]="post.fields.featuredImage.fields.file.url"
-      class="img-fluid"
-      alt=""
-    />
-
-    <p class="description">{{ post.fields.descriptions }}</p>
-  </div>
-  <div *ngFor="let content of body" class="body">
-    <div *ngIf="content.nodeType === 'heading-2'" class="margin">
-      <h2>{{ content.content[0].value }}</h2>
+@if (loaded) {
+  <div class="container mb-5">
+    <div class="go_back">
+      <a [routerLink]="['/home']"><i class="gg-arrow-left"></i></a>
     </div>
-    <div *ngIf="content.nodeType === 'paragraph'" class="margin">
-      {{ content.content[0].value }}
+    <div class="title">
+      <h1 class="mb">{{ post.fields.title }}</h1>
+      <p class="date">Published on {{ post.sys.createdAt | date }}</p>
+      @for (tag of tags; track tag; let last = $last; let index = $index) {
+        <span>
+          <span class="tags">{{ tag.name }}@if (!last) {
+            <span>, </span>
+          }</span>
+        </span>
+      }
+      <img
+        [src]="post.fields.featuredImage.fields.file.url"
+        class="img-fluid"
+        alt=""
+        />
+      <p class="description">{{ post.fields.descriptions }}</p>
     </div>
-    <div *ngIf="content.nodeType === 'heading-3'" class="margin">
-      <h3>{{ content.content[0].value }}</h3>
+    @for (content of body; track content) {
+      <div class="body">
+        @if (content.nodeType === 'heading-2') {
+          <div class="margin">
+            <h2>{{ content.content[0].value }}</h2>
+          </div>
+        }
+        @if (content.nodeType === 'paragraph') {
+          <div class="margin">
+            {{ content.content[0].value }}
+          </div>
+        }
+        @if (content.nodeType === 'heading-3') {
+          <div class="margin">
+            <h3>{{ content.content[0].value }}</h3>
+          </div>
+        }
+      </div>
+    }
+    <div>
+      <p class="body">"{{ post.fields.summary }}"</p>
     </div>
   </div>
-  <div>
-    <p class="body">"{{ post.fields.summary }}"</p>
-  </div>
-</div>
+}
