@@ -1,13 +1,11 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
-import { HTTP_INTERCEPTORS, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Import library module
 import { NgxSpinnerModule } from 'ngx-spinner';
@@ -22,11 +20,11 @@ import { FooterComponent } from './shared/components/footer/footer.component';
 import { AboutMeComponent } from './shared/components/about-me/about-me.component';
 import { AboutTheBlogComponent } from './shared/components/about-the-blog/about-the-blog.component';
 
-import { ShareButtonsModule } from 'ngx-sharebuttons/buttons';
-import { ShareButtonsPopupModule } from 'ngx-sharebuttons/popup';
+// import { ShareButtonsModule } from 'ngx-sharebuttons/buttons';
+// import { ShareButtonsPopupModule } from 'ngx-sharebuttons/popup';
 import { OverlayModule } from '@angular/cdk/overlay';
 
-import { ShareIconsModule } from 'ngx-sharebuttons/icons';
+// import { ShareIconsModule } from 'ngx-sharebuttons/icons';
 
 @NgModule({ declarations: [
         AppComponent,
@@ -44,9 +42,6 @@ import { ShareIconsModule } from 'ngx-sharebuttons/icons';
         AppRoutingModule,
         NgbModule,
         NgxSpinnerModule,
-        BrowserAnimationsModule,
-        ShareButtonsModule,
-        ShareButtonsPopupModule,
-        OverlayModule,
-        ShareIconsModule], providers: [ContentfulManagmentService, provideHttpClient(withInterceptorsFromDi())] })
+        OverlayModule],
+        providers: [ContentfulManagmentService, provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule {}
