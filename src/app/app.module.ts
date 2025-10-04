@@ -1,7 +1,7 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 
@@ -28,34 +28,25 @@ import { OverlayModule } from '@angular/cdk/overlay';
 
 import { ShareIconsModule } from 'ngx-sharebuttons/icons';
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    BlogShowcaseComponent,
-    BlogCardsComponent,
-    BlogViewComponent,
-    HomepageComponent,
-    NavbarComponent,
-    FooterComponent,
-    AboutMeComponent,
-    AboutTheBlogComponent,
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgbModule,
-    HttpClientModule,
-    NgxSpinnerModule,
-    BrowserAnimationsModule,
-    ShareButtonsModule,
-    ShareButtonsPopupModule,
-    OverlayModule,
-    ShareIconsModule,
-  ],
-
-  providers: [ContentfulManagmentService],
-
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  bootstrap: [AppComponent],
-})
+@NgModule({ declarations: [
+        AppComponent,
+        BlogShowcaseComponent,
+        BlogCardsComponent,
+        BlogViewComponent,
+        HomepageComponent,
+        NavbarComponent,
+        FooterComponent,
+        AboutMeComponent,
+        AboutTheBlogComponent,
+    ],
+    schemas: [CUSTOM_ELEMENTS_SCHEMA],
+    bootstrap: [AppComponent], imports: [BrowserModule,
+        AppRoutingModule,
+        NgbModule,
+        NgxSpinnerModule,
+        BrowserAnimationsModule,
+        ShareButtonsModule,
+        ShareButtonsPopupModule,
+        OverlayModule,
+        ShareIconsModule], providers: [ContentfulManagmentService, provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule {}
